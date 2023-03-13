@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>跳舞的吃豆人</title>
+	<style>
+		body {
+			background-color: #000000;
+		}
+
+		.pacman {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 100px;
+			height: 100px;
+			background-color: #FBC02D;
+			border-radius: 50%;
+			animation: dance 2s ease-in-out infinite;
+		}
+
+		.eye {
+			position: absolute;
+			top: 25%;
+			left: 25%;
+			width: 25%;
+			height: 25%;
+			background-color: #000000;
+			border-radius: 50%;
+		}
+
+		.mouth {
+			position: absolute;
+			top: 60%;
+			left: 25%;
+			width: 50%;
+			height: 20%;
+			background-color: #000000;
+			border-radius: 0 0 50% 50%;
+		}
+
+		@keyframes dance {
+			0% {
+				transform: translate(-50%, -50%) rotate(0deg);
+			}
+
+			25% {
+				transform: translate(-50%, -50%) rotate(30deg);
+			}
+
+			50% {
+				transform: translate(-50%, -50%) rotate(0deg);
+			}
+
+			75% {
+				transform: translate(-50%, -50%) rotate(-30deg);
+			}
+
+			100% {
+				transform: translate(-50%, -50%) rotate(0deg);
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="pacman">
+		<div class="eye"></div>
+		<div class="mouth"></div>
+	</div>
+</body>
+</html>
