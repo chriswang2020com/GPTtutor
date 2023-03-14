@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		  <title>Chasing the Sun - Pac-Man Animation</title>
+		    <style>
+    #sun {
+	          position: absolute;
+		        top: 20%;
+			      left: 50%;
+			            margin-left: -50px;
+				          width: 100px;
+					        height: 100px;
+						      background-color: yellow;
+						            border-radius: 50%;
+							          animation: sun-rotate 10s linear infinite;
+								      }
+        
+        #pac-man {
+		      position: absolute;
+		            top: 50%;
+			          left: -50px;
+				        width: 50px;
+					      height: 50px;
+					            background-color: yellow;
+						          border-radius: 50%;
+							        animation: pac-man-chase 5s linear infinite;
+								    }
+	    
+	    @keyframes sun-rotate {
+		          from { transform: rotate(0deg); }
+			        to { transform: rotate(360deg); }
+				    }
+	        
+	        @keyframes pac-man-chase {
+			      from { left: -50px; }
+			            to { left: 100%; }
+				        }
+		  </style>
+	</head>
+	<body>
+		  <div id="sun"></div>
+		    <div id="pac-man"></div>
+	</body>
+</html>
+

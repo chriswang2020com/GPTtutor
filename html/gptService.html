@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		  <meta charset="UTF-8">
+		    <title>JavaScript Demo</title>
+	</head>
+	<body>
+		  <h1>JavaScript Demo</h1>
+		    <p>Enter a number:</p>
+		      <input type="number" id="numInput">
+		        <br><br>
+			  <button onclick="multiplyByTen()">Multiply by 10</button>
+			    <br><br>
+			      <p id="result"></p>
+			        
+			        <script>
+					    function multiplyByTen() {
+											          var num = parseInt(document.getElementById("numInput").value);
+											          var result = num * 10;
+											          document.getElementById("result").innerHTML = "Result: " + result;
+											        }
+					  </script>
+	</body>
+</html>
+
