@@ -1,4 +1,4 @@
-const API_KEY = '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';  // 替换为您的 OpenAI API 密钥
+const API_KEY = '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';  // 替换为您的 OpenAI API 密钥
 
 const questionForm = document.getElementById('question-form');
 const questionInput = document.getElementById('question-input');

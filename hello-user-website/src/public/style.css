@@ -32,6 +32,7 @@
   
 /*UI interface*/
 .answer-container {
+	z-index: 1;
 	position: fixed;
 	top: 55%;
 	left: 50%;
@@ -49,6 +50,7 @@
   
 
   .question-container {
+	z-index:2;
 	position: fixed;
 	top: 40%;
 	left: 50%;
